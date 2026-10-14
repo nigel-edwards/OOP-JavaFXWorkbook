@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: lightblue; -fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 5; -fx-padding: 10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.testoflocalfx.HelloController">
+    <padding>
+        <Insets bottom="120.0" left="20.0" right="20.0" top="120.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <VBox spacing="50.0" style="-fx-background-color: lightgreen; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 5; -fx-padding: 10;">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+        <Label fx:id="welcomeText1" style="-fx-text-fill: red " />
+        <Button onAction="#onHelloButtonClick1" text="Hello Again!" />
+    </VBox>
+</VBox>
