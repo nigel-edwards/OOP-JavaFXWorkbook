@@ -13,5 +13,5 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <Label text="Welcome to JavaFX"
-           style="-fx-text-fill: green -fx; fx-font-family: 'Times New Roman'; -fx-font-size: 70; -fx-font-style: italic;"/>
+           style="-fx-text-fill: green -fx; -fx-font-family: 'Times New Roman'; -fx-font-size: 70; -fx-font-weight: bold;"/>
 </GridPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.collections.FXCollections?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.testoflocalfx.HelloModsController"
+          alignment="CENTER"
+          gridLinesVisible="true">
+    <Button text="Hello" GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <graphic>
+            <ImageView><Image url="@/toolbarButtonGraphics/general/Cut16.gif"/></ImageView>
+        </graphic>
+    </Button>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" alignment="CENTER" text="This is a label" textFill="red">
+        <font><Font name="Lucida Sans Unicode" size="20" /></font>
+        <graphic>
+            <ImageView><Image url="@/toolbarButtonGraphics/general/Find16.gif"/></ImageView>
+        </graphic>
+    </Label>
+    <fx:define><ToggleGroup fx:id="Group1"/></fx:define>
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="A" toggleGroup="$Group1"/>
+    <RadioButton GridPane.rowIndex="3" GridPane.columnIndex="0" text="B" toggleGroup="$Group1"/>
+    <RadioButton GridPane.rowIndex="4" GridPane.columnIndex="0" text="C" toggleGroup="$Group1"/>
+
+    <VBox GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-border-color: black; -fx-border-insets: 5; -fx-border-width: 3; -fx-border-style: solid;">
+        <fx:define><ToggleGroup fx:id="Group2"/></fx:define>
+        <RadioButton text="A VBox" toggleGroup="$Group2"/>
+        <RadioButton text="B VBox" toggleGroup="$Group2"/>
+        <RadioButton text="C VBox" toggleGroup="$Group2"/>
+    </VBox>
+
+    <CheckBox GridPane.rowIndex="5" GridPane.columnIndex="0" text="Check 1"/>
+    <CheckBox GridPane.rowIndex="6" GridPane.columnIndex="0" text="Check 2"/>
+    <CheckBox GridPane.rowIndex="7" GridPane.columnIndex="0" text="Check 3" selected="true"/>
+
+    <TextField GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <PasswordField GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <ComboBox GridPane.rowIndex="0" GridPane.columnIndex="3" GridPane.columnSpan="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="option 1"/>
+                <String fx:value="option 2"/>
+                <String fx:value="option 3"/>
+                <String fx:value="option 4"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Slider GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="5" min="0" max="100" showTickLabels="true" />
+    <Slider GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="5" min="0" max="100" showTickMarks="true" />
+    <Slider GridPane.rowIndex="10" GridPane.columnIndex="0" GridPane.columnSpan="5" min="0" max="100" showTickLabels="true" showTickMarks="true" minorTickCount="5"/>
+
+    <ColorPicker GridPane.rowIndex="11" GridPane.columnIndex="0"/>
+
+    <DatePicker GridPane.rowIndex="11" GridPane.columnIndex="4"/>
+
+
+
+</GridPane>

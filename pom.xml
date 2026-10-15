@@ -58,6 +58,13 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/net.java.linoleum/jlfgr -->
+        <dependency>
+            <groupId>net.java.linoleum</groupId>
+            <artifactId>jlfgr</artifactId>
+            <version>1_0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

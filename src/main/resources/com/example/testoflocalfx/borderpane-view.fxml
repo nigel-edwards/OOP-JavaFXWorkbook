@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.testoflocalfx.HelloModsController">
+    <top>
+        <Label text="This is the top of a BorderPane layout" BorderPane.alignment="CENTER"/>
+    </top>
+    <left>
+        <Label text="Left" BorderPane.alignment="CENTER_LEFT"></Label>
+    </left>
+    <right>
+        <Label text="Right" BorderPane.alignment="CENTER_RIGHT"></Label>
+    </right>
+    <center>
+        <Label text="Center" BorderPane.alignment="CENTER"></Label>
+    </center>
+    <bottom>
+        <HBox spacing="15" alignment="BOTTOM_LEFT">
+            <padding><Insets bottom="10" right="10" left="10"/> </padding>
+            <Button text="OK" prefWidth="75"/>
+            <Button text="Cancel" prefWidth="75"/>
+            <Button text="Help" prefWidth="75"/>
+            <Label text="Bottom"></Label>
+        </HBox>
+    </bottom>
+
+</BorderPane>
